@@ -1,0 +1,24 @@
+# ProBuilder 4.0.5
+# https://unity3d.com/unity/features/worldbuilding/probuilder
+# 1/18/2020 2:09:20 PM
+
+mtllib ./VideoPlane.mtl
+o VideoPlane
+
+g VideoPlane
+v -2.432774 4.493412 -0.9013345
+v -1.155525 4.493412 -0.9013345
+v -2.432774 5.770662 -0.9013345
+v -1.155525 5.770662 -0.9013345
+
+vt 0.8 0.2
+vt 0.2 0.2
+vt 0.8 0.8
+vt 0.2 0.8
+
+vn 0 0 -1.4564
+
+g VideoPlane
+usemtl ProBuilderDefault
+f 3/3/1 4/4/1 2/2/1 1/1/1
+
