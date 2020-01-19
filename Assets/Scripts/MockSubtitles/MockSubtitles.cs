@@ -4,6 +4,8 @@ using UnityEngine.Video;
 
 public class MockSubtitles : MonoBehaviour
 {
+    public static bool enabled = false;
+
     [SerializeField] protected Camera _mainCamera;
     [SerializeField] protected Canvas _canvas;
     [SerializeField] protected TextMeshProUGUI _textMesh;

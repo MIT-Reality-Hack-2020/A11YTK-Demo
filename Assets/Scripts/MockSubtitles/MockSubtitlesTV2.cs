@@ -51,7 +51,11 @@ public class MockSubtitlesTV2 : MockSubtitles
             }
             else if (elapsedTime >= subtitles[_currentSubtitleIndex].startTime)
             {
-                ShowText();
+                if (MockSubtitles.enabled)
+                {
+                    ShowText();
+                }
+
                 SetText(subtitles[_currentSubtitleIndex].text);
             }
 
