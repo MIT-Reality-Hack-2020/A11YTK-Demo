@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: b655a7a1df8dd405ab59391f1dadd484
+guid: 9099641dd9d20479eb78d3a25fac2cac
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
   fontSize: 16
-  forceTextureCase: -1
+  forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Karla
+  fontName: SquareFont
   fontNames:
-  - Karla
+  - SquareFont
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

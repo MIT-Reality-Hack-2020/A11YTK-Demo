@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec1e3b3a1214496786c0b5017ce769d8, type: 3}
-  m_Name: SubtitleOptions2
+  m_Name: SubtitleOptions
   m_EditorClassIdentifier: 
   enabled: 1
-  defaultPosition: 1
-  fontSize: 25
-  fontForegroundColor: {r: 0, g: 0.6127057, b: 1, a: 1}
+  defaultPosition: 2
+  fontSize: 30
+  fontForegroundColor: {r: 1, g: 1, b: 1, a: 1}
   fontBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   showBackgroundColor: 1
-  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  fontMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
+  fontAsset: {fileID: 0}
+  fontMaterial: {fileID: 0}

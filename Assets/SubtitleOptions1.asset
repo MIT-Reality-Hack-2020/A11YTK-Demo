@@ -18,5 +18,6 @@ MonoBehaviour:
   fontForegroundColor: {r: 1, g: 1, b: 1, a: 1}
   fontBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   showBackgroundColor: 1
-  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  fontMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
+  fontAsset: {fileID: 11400000, guid: e535f94fb774e439592555cdd5e16996, type: 2}
+  fontMaterial: {fileID: 864896504632045789, guid: e535f94fb774e439592555cdd5e16996,
+    type: 2}
