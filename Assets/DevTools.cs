@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using A11YTK;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DevTools : MonoBehaviour
 {
@@ -35,6 +36,16 @@ public class DevTools : MonoBehaviour
             {
                 component.enabled = false;
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Oculus_CrossPlatform_Button_1"))
+        {
+            PlayerPrefs.SetFloat("subtitles", 1);
+
+            SceneManager.LoadScene("A11YTk");
         }
     }
 }
