@@ -8,6 +8,8 @@ public class SimpleGazeScript : MonoBehaviour {
     public GameObject cursorPrefab;
     public float maxCursorDistance = 30;
 
+    public LayerMask cursorLayerMask;
+
     private GameObject cursorInstance;
 
     // Start is called before the first frame update
@@ -24,7 +26,7 @@ public class SimpleGazeScript : MonoBehaviour {
         // Create a gaze ray pointing forward from the camera
         Ray ray = new Ray (viewCamera.transform.position, viewCamera.transform.rotation * Vector3.forward);
         RaycastHit hit;
-        if (Physics.Raycast (ray, out hit, Mathf.Infinity)) {
+        if (Physics.Raycast (ray, out hit, Mathf.Infinity, cursorLayerMask)) {
             Debug.Log ("I WORK");
             if (Input.GetKeyDown (KeyCode.Space)) {
                 var component = hit.collider.gameObject.GetComponent<SubtitleController> ();
