@@ -1,4 +1,6 @@
+using System.Collections;
 using A11YTK;
+using UnityEngine;
 
 public class MockSubtitlesTV2 : MockSubtitles
 {
@@ -26,4 +28,36 @@ public class MockSubtitlesTV2 : MockSubtitles
             text = "Wait - maybe they don't have subtitles on?"
         }
     };
+
+    private int _currentSubtitleIndex = 0;
+
+    private IEnumerator Start()
+    {
+        while (!_videoPlayer.isPlaying)
+        {
+            yield return null;
+        }
+
+        var elapsedTime = 0f;
+
+        while (_currentSubtitleIndex < subtitles.Length)
+        {
+            elapsedTime += Time.deltaTime;
+
+            if (elapsedTime >= subtitles[_currentSubtitleIndex].endTime)
+            {
+                HideText();
+                _currentSubtitleIndex += 1;
+            }
+            else if (elapsedTime >= subtitles[_currentSubtitleIndex].startTime)
+            {
+                ShowText();
+                SetText(subtitles[_currentSubtitleIndex].text);
+            }
+
+            yield return null;
+        }
+
+        HideText();
+    }
 }
