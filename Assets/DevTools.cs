@@ -47,21 +47,26 @@ public class DevTools : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Oculus_CrossPlatform_Button_1"))
+        if (PlayerPrefs.GetFloat("subtitles") == 0 &&
+            (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Oculus_CrossPlatform_Button_1")))
         {
             PlayerPrefs.SetFloat("subtitles", 1);
 
             SceneManager.LoadScene("A11YTk");
         }
 
-        if (_currentVolume > 0)
-        {
-            _currentVolume = Mathf.Lerp(_currentVolume, 0, Time.deltaTime);
-        }
-
         foreach (var videoPlayer in _videoPlayers)
         {
             videoPlayer.SetDirectAudioVolume(0, _currentVolume);
+        }
+
+        if (Input.GetKey(KeyCode.Space) || Input.GetButton("Oculus_CrossPlatform_Button_1"))
+        {
+            _currentVolume = Mathf.Lerp(_currentVolume, 1, Time.deltaTime);
+        }
+        else
+        {
+            _currentVolume = Mathf.Lerp(_currentVolume, 0, Time.deltaTime);
         }
     }
 }
