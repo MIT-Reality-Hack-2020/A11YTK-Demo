@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using A11YTK;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class DevTools : MonoBehaviour
 
     private void Start()
     {
+        MockSubtitles.enabled = false;
+
         if (Application.isEditor)
         {
             foreach (var controller in _controllers)
