@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.scottdoxey.a11ytk": "https://github.com/neogeek/a11ytk.git#upm",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "2.0.8",
@@ -48,11 +47,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.scottdoxey.a11ytk": {
-      "hash": "6080aa86107c6f0b0144b7babf03ee2b6875b518",
-      "revision": "upm"
-    }
   }
 }
