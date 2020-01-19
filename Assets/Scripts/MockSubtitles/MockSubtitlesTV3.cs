@@ -18,7 +18,7 @@ public class MockSubtitlesTV3 : MockSubtitles
             id = 2,
             startTime = 16.23,
             endTime = 17.36,
-            text = "Wait, who is this?"
+            text = "Wait, who is that?"
         }
     };
 
