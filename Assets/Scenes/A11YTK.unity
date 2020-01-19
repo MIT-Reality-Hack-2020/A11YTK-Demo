@@ -4800,6 +4800,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 37ba10a26a648144fa2390c8adfb2c8a, type: 3}
+      propertyPath: m_TagString
+      value: Controller
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 37ba10a26a648144fa2390c8adfb2c8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -5460,6 +5464,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 32fbc8bcebb64584da5868aeeb086cda, type: 3}
+      propertyPath: m_TagString
+      value: Controller
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 32fbc8bcebb64584da5868aeeb086cda, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -5781,6 +5789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f6bd0a9b5074af18504333c334cb53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _subtitleOptionsReference: {fileID: 0}
 --- !u!1 &2051852615
 GameObject:
   m_ObjectHideFlags: 0
