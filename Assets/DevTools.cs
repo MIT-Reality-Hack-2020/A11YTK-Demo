@@ -12,7 +12,15 @@ public class DevTools : MonoBehaviour
 
     private void Start()
     {
-        MockSubtitles.enabled = false;
+        if (PlayerPrefs.GetFloat("subtitles") == 1)
+        {
+            MockSubtitles.enabled = true;
+        }
+        else
+        {
+            MockSubtitles.enabled = false;
+        }
+
 
         if (Application.isEditor)
         {

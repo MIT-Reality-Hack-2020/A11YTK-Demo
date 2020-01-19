@@ -16,7 +16,11 @@ public class PushButton : MonoBehaviour
 
         if (other.gameObject.tag.Equals("Controller"))
         {
+            PlayerPrefs.SetFloat("subtitles", 1);
+
             MockSubtitles.enabled = true;
+
+            SceneManager.LoadScene("A11YTK");
         }
     }
 }
