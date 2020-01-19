@@ -125,8 +125,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -427,7 +427,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.13300002}
-  m_SizeDelta: {x: 150, y: 30}
+  m_SizeDelta: {x: 196.24, y: 48.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3175307053193028695
 Canvas:
