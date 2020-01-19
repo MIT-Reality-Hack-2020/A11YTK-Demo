@@ -59,8 +59,6 @@ public class DevTools : MonoBehaviour
             _currentVolume = Mathf.Lerp(_currentVolume, 0, Time.deltaTime);
         }
 
-        Debug.Log(_currentVolume);
-
         foreach (var videoPlayer in _videoPlayers)
         {
             videoPlayer.SetDirectAudioVolume(0, _currentVolume);
